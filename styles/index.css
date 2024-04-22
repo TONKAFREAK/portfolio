@@ -62,39 +62,34 @@
         font-size:20px
     }
 
-    .infoPanel{
-        display:flex;
-        background-color: #202020;
-        color: #fff;
-        justify-content:space-evenly;
-        align-items:center;
-        position:fixed;
-        width: 60%;
-        height: 60%;
-        top: 10%;
-        left: 20%;
-        right: 20%;
-        left: 10%;
-        border-radius: 40px;
-      
+    .panelRow{
+        flex-direction: row;
+        display: flex;
+        
     }
 
-    .projectsPanel{
-        display:flex;
+    .infoPanel, .projectsPanel {
+        display: flex;
         background-color: #202020;
         color: #fff;
-        justify-content:space-evenly;
-        align-items:center;
-        position:fixed;
-        width: 20%;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
         height: 60%;
         top: 10%;
-        left: 20%;
-        right: 20%;
-        left: 75%;
         border-radius: 40px;
-    
     }
+    
+    .infoPanel {
+        width: 60%;
+        left: 10%;
+    }
+    
+    .projectsPanel {
+        width: 20%;
+        left: 75%;
+    }
+    
 }
 
 @media (min-width:950px) and (max-width:1294px){  
