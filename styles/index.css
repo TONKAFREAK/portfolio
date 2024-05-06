@@ -1,31 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #181A1B;        
+}
+
+.container {
+    position: relative; 
+    width: 100%;
+    max-width: 100%;
+    margin: auto; 
+    padding: 0;
+}
+
+.tab {
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    width: 20%; 
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    z-index: 100; 
+}
+
+.about {
+    padding-top: 50px; 
+    text-align: center; 
+    animation: fade-in 1s ease-out;
+    background-color: #181A1B;
+}
+
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.about-h {
+    font-size: 3em;  
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem; 
+}
+
+.about-p {
+    max-width: 768px;  
+    margin-left: auto;  
+    margin-right: auto;
+    font-size: 1.125rem;  
+}
+
+.skills {
+    padding-top: 5px; 
+    text-align: center; 
+    animation: fade-in 1s ease-out;
+    background-color: #181A1B;
+}
+
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.skills-h {
+    font-size: 3em;  
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem; 
+}
+
+.skills-cotainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 2rem;
+}
+
+.skill {
+    background-color: #2d3748; 
+    border-radius: 0.5rem; 
+    padding: 1.5rem; 
+    text-align: center; 
+    transition: background-color 300ms;
+
+}
+
+.skill:hover {
+    background-color: #4a5568; 
+}
+
+.skill-img {
+    margin-left: auto;  /* 'mx-auto' sets the left margin to auto, centering the element horizontally */
+    margin-right: auto; /* 'mx-auto' also sets the right margin to auto */
+    margin-bottom: 1rem;  /* 'mb-4' sets the bottom margin; assuming 1rem is equivalent to '4' in your scale */
+}
+
 @media (min-width:1295px){
-    
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background: #f4f4f4;
-        color: #181A1B;
-    }
-
-    header {
-        background: #333;
-        color: #fff;
-        padding: 10px 20px;
-        text-align: center;
-    }
-
-    footer {
-        text-align: center;
-        padding: 10px 0;
-        background: #333;
-        color: #fff;
-    }
-
-    footer p {
-        margin: 0;
-    }   
 
     .tab{
         width:20%;
@@ -46,48 +130,26 @@
     .tab-item{
         cursor:pointer;
         font-size:18px;
-        transition:font-size .5s
+        transition:font-size .5s;
     }
 
     .tab-item,.tab-text{
         font-family:Poppins,sans-serif;
-        color:#fff
+        color:#fff;
     }
 
     .tab-text{
-        font-size:24px
+        font-size:24px;
     }
 
     .tab-item:hover{
-        font-size:20px
+        font-size:20px;
     }
 
     .panelRow{
         flex-direction: row;
         display: flex;
         
-    }
-
-    .infoPanel, .projectsPanel {
-        display: flex;
-        background-color: #202020;
-        color: #fff;
-        justify-content: space-evenly;
-        align-items: center;
-        position: fixed;
-        height: 60%;
-        top: 10%;
-        border-radius: 40px;
-    }
-    
-    .infoPanel {
-        width: 60%;
-        left: 10%;
-    }
-    
-    .projectsPanel {
-        width: 20%;
-        left: 75%;
     }
     
 }
