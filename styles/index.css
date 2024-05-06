@@ -229,7 +229,7 @@ body {
 }
 
 .email:hover {
-    background-color: #0e5a7a; /* Darker shade of green */
+    background-color: #0e5a7a; 
 }
 
 
@@ -409,6 +409,16 @@ body {
 
     .tab-item:hover{
         font-size:20px
+    }
+
+    .skills {
+        width: 30%; 
+        padding-top: 5px;
+        padding-left: 35%;
+        padding-right: 35%;
+        text-align: center; 
+        animation: fade-in 1s ease-out;
+        background-color: #181A1B;
     }
 
     .skills-container {
