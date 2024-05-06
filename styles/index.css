@@ -429,8 +429,8 @@ body {
     .projects {
         width: 30%; 
         padding-top: 5px;
-        padding-left: 35%;
-        padding-right: 35%;
+        padding-left: auto;
+        padding-right: auto;
         text-align: center; 
         animation: fade-in 1s ease-out;
         background-color: #181A1B;
