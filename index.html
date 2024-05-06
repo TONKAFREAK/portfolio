@@ -25,28 +25,189 @@
 
         <div class="skills">
             <h2 class="skills-h">Skills</h2>
-            
             <div class="skills-container">
 
                 <div class="skill">
-                    <img src="/java.png" alt="Java" class="skill-img">
-                    <h2 class="skill-h">Java</h2>
+                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/Java" target="_blank">
+                    <img src="/java1.png" alt="Java" class="skill-img" data-hover-src="/java.svg">
+                    </a>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const skillImages = document.querySelectorAll('.skill-img');
+                        
+                            skillImages.forEach(img => {
+                                const originalSrc = img.src;
+                                const hoverSrc = img.getAttribute('data-hover-src');
+                        
+                                img.addEventListener('mouseenter', function() {
+                                    img.src = hoverSrc;
+                                });
+                        
+                                img.addEventListener('mouseleave', function() {
+                                    img.src = originalSrc;
+                                });
+                            });
+                        });
+                    </script>
+
                 </div>
 
                 <div class="skill">
-                    
-                </div>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                    <img src="/js1.png" alt="JavaScript" class="skill-img-2"data-hover-src="/js.svg">
+                    </a>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const skillImages = document.querySelectorAll('.skill-img-2');
+                        
+                            skillImages.forEach(img => {
+                                const originalSrc = img.src;
+                                const hoverSrc = img.getAttribute('data-hover-src');
+                        
+                                img.addEventListener('mouseenter', function() {
+                                    img.src = hoverSrc;
+                                });
+                        
+                                img.addEventListener('mouseleave', function() {
+                                    img.src = originalSrc;
+                                });
+                            });
+                        });
+                    </script>
 
-                <div class="skill">
-                    
                 </div>
-
+                
             </div>
-            
-            
         </div>
 
+        <div class="projects">
+            <h2 class="projects-h">Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <a href="https://discord.com/application-directory/1217191548416954439" target="_blank">
+                    <img src="/project11.png" alt="Project 1" class="project-img" data-hover-src="/project1.png">
+                    </a>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const skillImages = document.querySelectorAll('.project-img');
+                        
+                            skillImages.forEach(img => {
+                                const originalSrc = img.src;
+                                const hoverSrc = img.getAttribute('data-hover-src');
+                        
+                                img.addEventListener('mouseenter', function() {
+                                    img.src = hoverSrc;
+                                });
+                        
+                                img.addEventListener('mouseleave', function() {
+                                    img.src = originalSrc;
+                                });
+                            });
+                        });
+                    </script>
+
+                    <h3>KNIGHT : Discord bot</h3>
+                    <p> AI discord bot created using JavaScript that can perform various functions such as generating images, answering question and fun chatbot.</p>
+                </div>
+
+                <div class="project">
+                    <a href="https://github.com/TONKAFREAK/text_editor" target="_blank">
+                    <img src="/project21.png" alt="Project 2" class="project-img-2" data-hover-src="/project2.png">
+                    </a>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const skillImages = document.querySelectorAll('.project-img-2');
+                        
+                            skillImages.forEach(img => {
+                                const originalSrc = img.src;
+                                const hoverSrc = img.getAttribute('data-hover-src');
+                        
+                                img.addEventListener('mouseenter', function() {
+                                    img.src = hoverSrc;
+                                });
+                        
+                                img.addEventListener('mouseleave', function() {
+                                    img.src = originalSrc;
+                                });
+                            });
+                        });
+                    </script>
+                    <h3>ZenWrite : Text Editor</h3>
+                    <p> A simple text editor created using Java that allows users to write, edit and save text files.</p>
+                </div>
+
+                <div class="project">
+
+                    <a href="https://github.com/TONKAFREAK/api_speed_comp" target="_blank">
+                        <img src="/project31.png" alt="Project 3" class="project-img" data-hover-src="/project3.png">
+                    </a>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const skillImages = document.querySelectorAll('.project-img-2');
+                        
+                            skillImages.forEach(img => {
+                                const originalSrc = img.src;
+                                const hoverSrc = img.getAttribute('data-hover-src');
+                        
+                                img.addEventListener('mouseenter', function() {
+                                    img.src = hoverSrc;
+                                });
+                        
+                                img.addEventListener('mouseleave', function() {
+                                    img.src = originalSrc;
+                                });
+                            });
+                        });
+                    </script>
+                    <h3>AI response Speed Comparison</h3>
+                    <p> A project that compares the response speed of different AI models when asked the same question.</p> 
+                    
+                </div>
+
+                <div class="project">
+                    <a href="https://github.com/TONKAFREAK/Pocket-Controller" target="_blank">
+                    <img src="/project41.png" alt="Project 4" class="project-img-3" data-hover-src="/project4.png">
+                    </a>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const skillImages = document.querySelectorAll('.project-img-3');
+                        
+                            skillImages.forEach(img => {
+                                const originalSrc = img.src;
+                                const hoverSrc = img.getAttribute('data-hover-src');
+                        
+                                img.addEventListener('mouseenter', function() {
+                                    img.src = hoverSrc;
+                                });
+                        
+                                img.addEventListener('mouseleave', function() {
+                                    img.src = originalSrc;
+                                });
+                            });
+                        });
+                    </script>
+                    <h3>Pocket Controller : Still working on..</h3>
+                    <p> A project that allows users to use their phone as controller to play video games on their desktops.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2 class="contact-h">Contact</h2>
+            <p>
+                Are you excited about innovative projects and collaboration? Contact me to explore how we can create something incredible together!
+            </p>
+            <a href="mailto:soloyjon27@gmail.com" class="email">
+                Send Email
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 TONKAFREAK. All rights reserved.</p>  
+        </div>
     </div>
+
+    
 
 </body>
 </html>
