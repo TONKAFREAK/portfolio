@@ -382,7 +382,7 @@ body {
 @media (max-width: 689px) {
     
     .tab {
-        width: 110%;
+        width: 100%;
         position: fixed;
         background-color: initial;
         color: #fff;
