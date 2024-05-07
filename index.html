@@ -101,38 +101,6 @@
             </div>
         </div>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                function updateImageSources() {
-                    var screenWidth = window.innerWidth;
-            
-                    if (screenWidth <= 689) {
-                        
-                        document.getElementById('javaSkill').src = '/java.svg';
-                        document.getElementById('jsSkill').src = '/js.svg';
-                        document.getElementById('project1').src = '/project1.png';
-                        document.getElementById('project2').src = '/project2.png';
-                        document.getElementById('project3').src = '/project3.png';
-                        document.getElementById('project4').src = '/project4.png';
-
-                    } else {
-                        document.getElementById('javaSkill').src = '/java1.png';
-                        document.getElementById('jsSkill').src = '/js1.png';
-                        document.getElementById('project1').src = '/project11.png';
-                        document.getElementById('project2').src = '/project21.png';
-                        document.getElementById('project3').src = '/project31.png';
-                        document.getElementById('project4').src = '/project41.png';
-                    }
-                }
-            
-               
-                updateImageSources();
-            
-                
-                window.addEventListener('resize', updateImageSources);
-            });
-            </script>
-
         <div class="projects" id="projects">
             <h2 class="projects-h">Projects</h2>
             <div class="projects-container">
@@ -244,6 +212,38 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                function updateImageSources() {
+                    var screenWidth = window.innerWidth;
+            
+                    if (screenWidth <= 689) {
+                        
+                        document.getElementById('javaSkill').src = '/java.svg';
+                        document.getElementById('jsSkill').src = '/js.svg';
+                        document.getElementById('project1').src = '/project1.png';
+                        document.getElementById('project2').src = '/project2.png';
+                        document.getElementById('project3').src = '/project3.png';
+                        document.getElementById('project4').src = '/project4.png';
+
+                    } else {
+                        document.getElementById('javaSkill').src = '/java1.png';
+                        document.getElementById('jsSkill').src = '/js1.png';
+                        document.getElementById('project1').src = '/project11.png';
+                        document.getElementById('project2').src = '/project21.png';
+                        document.getElementById('project3').src = '/project31.png';
+                        document.getElementById('project4').src = '/project41.png';
+                    }
+                }
+            
+               
+                updateImageSources();
+            
+                
+                window.addEventListener('resize', updateImageSources);
+            });
+            </script>
 
         <div class="contact">
             <h2 class="contact-h">Contact</h2>
