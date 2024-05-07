@@ -39,7 +39,7 @@ body {
     padding-top: 50px; 
     text-align: center; 
     animation: fade-in 1s ease-out;
-    background-color: #181A1B;
+    background-color: initial;
 }
 
 
@@ -75,7 +75,7 @@ body {
     padding-right: 33%;
     text-align: center; 
     animation: fade-in 1s ease-out;
-    background-color: #181A1B;
+    background-color: initial;
 }
 
 
@@ -113,7 +113,7 @@ body {
 }
 
 .skill {
-    background-color: #181A1B;
+    background-color: initial;
     border-radius: 0;
     padding: 0;
     text-align: center;
@@ -141,7 +141,7 @@ body {
     padding-right: 33%;
     text-align: center; 
     animation: fade-in 1s ease-out;
-    background-color: #181A1B;
+    background-color: initial;
 }
 
 .projects-h {
@@ -168,7 +168,7 @@ body {
 }
 
 .project {
-    background-color: #181A1B;
+    background-color: initial;
     border-radius: 0;
     padding: 0;
     text-align: center;
