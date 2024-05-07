@@ -11,19 +11,40 @@
     <div class="container"> 
 
         <div class="tab">
-            <span class="tab-item" url="">About</span>
-            <span class="tab-item" url="">Skills</span>
-            <span class="tab-item" url="">Projects</span>
+            <span class="tab-item" data-target="about">About</span>
+            <span class="tab-item" data-target="skills">Skills</span>
+            <span class="tab-item" data-target="projects">Projects</span>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const tabItems = document.querySelectorAll('.tab-item');
+            
+                    tabItems.forEach(item => {
+                        item.addEventListener('click', function() {
+                            const targetId = item.getAttribute('data-target');
+                            const targetSection = document.getElementById(targetId);
+                            
+                            if (targetSection) {
+                                window.scrollTo({
+                                    top: targetSection.offsetTop,
+                                    behavior: 'smooth' 
+                                });
+                            }
+                        });
+                    });
+                });
+            </script>
+
         </div>
 
-        <div class="about">
+        <div class="about" id="about">
             <h2 class="about-h">About Me</h2>
             <p class="about-p">
                 I'm a 20-year-old aspiring software engineer currently pursuing a degree in Computer Science. I have a strong interest in backend development and am skilled in Java and JavaScript. My goal is to build a career in software engineering, where I can apply my technical skills and passion for coding to create innovative solutions.
             </p>
         </div>
 
-        <div class="skills">
+        <div class="skills" id="skills">
             <h2 class="skills-h">Skills</h2>
             <div class="skills-container">
 
@@ -80,7 +101,7 @@
             </div>
         </div>
 
-        <div class="projects">
+        <div class="projects" id="projects">
             <h2 class="projects-h">Projects</h2>
             <div class="projects-container">
                 <div class="project">
