@@ -400,7 +400,6 @@ body {
         cursor: pointer;
         font-size: 16px; 
         transition: font-size .5s;
-        
     }
 
     .tab-item:hover {
@@ -409,7 +408,7 @@ body {
 
     .about, .skills, .projects, .contact {
         width: 100%; 
-        padding: 20px 5%; 
+        padding: 0; 
         text-align: center; 
         animation: fade-in 1s ease-out;
         background-color: #181A1B; 
@@ -437,10 +436,6 @@ body {
         width: 30%; 
         padding: 15px 20px; 
         font-size: 18px; 
-    }
-
-    .footer{
-        width: 100%;
     }
     
 }
