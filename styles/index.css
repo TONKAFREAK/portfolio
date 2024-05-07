@@ -441,4 +441,12 @@ body {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    #javaskill{
+        background-image: url('/java1.png');
+    }
+
+    #jsskills{
+        background-image: url('/js1.png');
+    }
+
 }

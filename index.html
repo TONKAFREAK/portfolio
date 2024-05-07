@@ -50,7 +50,7 @@
 
                 <div class="skill">
                     <a href="https://developer.mozilla.org/en-US/docs/Glossary/Java" target="_blank">
-                    <img src="/java1.png" alt="Java" class="skill-img" data-hover-src="/java.svg">
+                    <img id="javaSkill" src="/java1.png" alt="Java" class="skill-img" data-hover-src="/java.svg">
                     </a>
                     <script>
                         document.addEventListener('DOMContentLoaded', function() {
@@ -75,7 +75,7 @@
 
                 <div class="skill">
                     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-                    <img src="/js1.png" alt="JavaScript" class="skill-img-2"data-hover-src="/js.svg">
+                    <img id="jsSkill" src="/js1.png" alt="JavaScript" class="skill-img-2"data-hover-src="/js.svg">
                     </a>
                     <script>
                         document.addEventListener('DOMContentLoaded', function() {
@@ -101,12 +101,44 @@
             </div>
         </div>
 
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                function updateImageSources() {
+                    var screenWidth = window.innerWidth;
+            
+                    if (screenWidth <= 689) {
+                        
+                        document.getElementById('javaSkill').src = '/java.svg';
+                        document.getElementById('jsSkill').src = '/js.svg';
+                        document.getElementById('project1').src = '/project1.png';
+                        document.getElementById('project2').src = '/project2.png';
+                        document.getElementById('project3').src = '/project3.png';
+                        document.getElementById('project4').src = '/project4.png';
+
+                    } else {
+                        document.getElementById('javaSkill').src = '/java1.png';
+                        document.getElementById('jsSkill').src = '/js1.png';
+                        document.getElementById('project1').src = '/project11.png';
+                        document.getElementById('project2').src = '/project21.png';
+                        document.getElementById('project3').src = '/project31.png';
+                        document.getElementById('project4').src = '/project41.png';
+                    }
+                }
+            
+               
+                updateImageSources();
+            
+                
+                window.addEventListener('resize', updateImageSources);
+            });
+            </script>
+
         <div class="projects" id="projects">
             <h2 class="projects-h">Projects</h2>
             <div class="projects-container">
                 <div class="project">
                     <a href="https://discord.com/application-directory/1217191548416954439" target="_blank">
-                    <img src="/project11.png" alt="Project 1" class="project-img" data-hover-src="/project1.png">
+                    <img id="project1" src="/project11.png" alt="Project 1" class="project-img" data-hover-src="/project1.png">
                     </a>
                     <script>
                         document.addEventListener('DOMContentLoaded', function() {
@@ -133,7 +165,7 @@
 
                 <div class="project">
                     <a href="https://github.com/TONKAFREAK/text_editor" target="_blank">
-                    <img src="/project21.png" alt="Project 2" class="project-img-2" data-hover-src="/project2.png">
+                    <img id="project2" src="/project21.png" alt="Project 2" class="project-img-2" data-hover-src="/project2.png">
                     </a>
                     <script>
                         document.addEventListener('DOMContentLoaded', function() {
@@ -160,7 +192,7 @@
                 <div class="project">
 
                     <a href="https://github.com/TONKAFREAK/api_speed_comp" target="_blank">
-                        <img src="/project31.png" alt="Project 3" class="project-img" data-hover-src="/project3.png">
+                        <img id="project3" src="/project31.png" alt="Project 3" class="project-img" data-hover-src="/project3.png">
                     </a>
                     <script>
                         document.addEventListener('DOMContentLoaded', function() {
@@ -187,7 +219,7 @@
 
                 <div class="project">
                     <a href="https://github.com/TONKAFREAK/Pocket-Controller" target="_blank">
-                    <img src="/project41.png" alt="Project 4" class="project-img-3" data-hover-src="/project4.png">
+                    <img id="project4" src="/project41.png" alt="Project 4" class="project-img-3" data-hover-src="/project4.png">
                     </a>
                     <script>
                         document.addEventListener('DOMContentLoaded', function() {
