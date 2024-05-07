@@ -438,6 +438,10 @@ body {
         padding: 15px 20px; 
         font-size: 18px; 
     }
+
+    .footer{
+        width: 100%;
+    }
     
 }
 
