@@ -1,0 +1,20 @@
+[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Tue 2024-05-14 16:32:28 EDT; 11min ago
+       Docs: man:nginx(8)
+    Process: 439567 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 439568 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 440007 ExecReload=/usr/sbin/nginx -g daemon on; master_process on; -s reload (code=exited, status=0/SUCCESS)
+   Main PID: 439659 (nginx)
+      Tasks: 3 (limit: 4575)
+     Memory: 4.9M
+        CPU: 70ms
+     CGroup: /system.slice/nginx.service
+             ├─439659 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"
+             ├─440008 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+             └─440009 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+
+May 14 16:32:28 tonka systemd[1]: Starting A high performance web server and a reverse proxy server...
+May 14 16:32:28 tonka systemd[1]: Started A high performance web server and a reverse proxy server.
+May 14 16:37:50 tonka systemd[1]: Reloading A high performance web server and a reverse proxy server...
+May 14 16:37:50 tonka systemd[1]: Reloaded A high performance web server and a reverse proxy server.
