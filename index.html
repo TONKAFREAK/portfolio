@@ -198,56 +198,6 @@
                     </script>
 
                 </div>
-
-                <div class="skill">
-                    <a href="https://www.linux.com/what-is-linux" target="_blank">
-                    <img id="linuxSkill" src="/linux1.png" alt="Linux" class="skill-img" data-hover-src="/linux.svg">
-                    </a>
-                    <script>
-                        document.addEventListener('DOMContentLoaded', function() {
-                            const skillImages = document.querySelectorAll('.skill-img');
-                        
-                            skillImages.forEach(img => {
-                                const originalSrc = img.src;
-                                const hoverSrc = img.getAttribute('data-hover-src');
-                        
-                                img.addEventListener('mouseenter', function() {
-                                    img.src = hoverSrc;
-                                });
-                        
-                                img.addEventListener('mouseleave', function() {
-                                    img.src = originalSrc;
-                                }); 
-                            });
-                        });
-                    </script>
-
-                </div>
-                
-                <div class="skill">
-                    <a href="https://nginx.org/en/" target="_blank">
-                    <img id="nginxSkill" src="/nginx1.png" alt="Nginx" class="skill-img" data-hover-src="/nginx.svg">
-                    </a>
-                    <script>
-                        document.addEventListener('DOMContentLoaded', function() {
-                            const skillImages = document.querySelectorAll('.skill-img');
-                        
-                            skillImages.forEach(img => {
-                                const originalSrc = img.src;
-                                const hoverSrc = img.getAttribute('data-hover-src');
-                        
-                                img.addEventListener('mouseenter', function() {
-                                    img.src = hoverSrc;
-                                });
-                        
-                                img.addEventListener('mouseleave', function() {
-                                    img.src = originalSrc;
-                                });
-                            });
-                        });
-                    </script>
-
-                </div>    
                 
             </div>
         </div>
@@ -361,6 +311,60 @@
                     <h3 class="projects-h2"> Pocket Controller : Still working on..</h3>
                     <p class="projects-p"> A project that allows users to use their phone as controller to play video games on their desktops.</p>
                 </div>
+
+                <div class="project">
+                    <a href="https://github.com/TONKAFREAK/TwitchClipTikTokAutoPoster" target="_blank">
+                    <img id="project5" src="/tbot1.png" alt="Project 5" class="project-img-3" data-hover-src="/tbot.png">
+                    </a>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const skillImages = document.querySelectorAll('.project-img-3');
+                        
+                            skillImages.forEach(img => {
+                                const originalSrc = img.src;
+                                const hoverSrc = img.getAttribute('data-hover-src');
+                        
+                                img.addEventListener('mouseenter', function() {
+                                    img.src = hoverSrc;
+                                });
+                        
+                                img.addEventListener('mouseleave', function() {
+                                    img.src = originalSrc;
+                                });
+                            });
+                        });
+                    </script>
+                    <h3 class="projects-h2"> Twitch/Tiktok Bot</h3>
+                    <p class="projects-p"> A bot that allows users to post live stream clips from twitch to tiktok.</p>
+                </div>
+
+                <div class="project">
+                    <a href="https://github.com/TONKAFREAK/taxi_application" target="_blank">
+                    <img id="project6" src="/taxibe1.png" alt="Project 6" class="project-img-3" data-hover-src="/taxibe.png">
+                    </a>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const skillImages = document.querySelectorAll('.project-img-3');
+                        
+                            skillImages.forEach(img => {
+                                const originalSrc = img.src;
+                                const hoverSrc = img.getAttribute('data-hover-src');
+                        
+                                img.addEventListener('mouseenter', function() {
+                                    img.src = hoverSrc;
+                                });
+                        
+                                img.addEventListener('mouseleave', function() {
+                                    img.src = originalSrc;
+                                });
+                            });
+                        });
+                    </script>
+                    <h3 class="projects-h2"> Taxi Application BackEnd</h3>
+                    <p class="projects-p"> Simple BackEnd for Taxi Application using Spring Boot</p>
+                </div>
+
+
             </div>
         </div>
 
@@ -377,6 +381,8 @@
                         document.getElementById('project2').src = '/project2.png';
                         document.getElementById('project3').src = '/project3.png';
                         document.getElementById('project4').src = '/project4.png';
+                        document.getElementById('project5').src = '/tbot.png';
+                        document.getElementById('project6').src = '/taxibe.png';
 
                     } else {
                         document.getElementById('javaSkill').src = '/java1.png';
@@ -385,6 +391,8 @@
                         document.getElementById('project2').src = '/project21.png';
                         document.getElementById('project3').src = '/project31.png';
                         document.getElementById('project4').src = '/project41.png';
+                        document.getElementById('project5').src = '/tbot1.png';
+                        document.getElementById('project6').src = '/taxibe1.png';
                     }
                 }
             
